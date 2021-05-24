@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import ReactStars from "react-rating-stars-component";
+import MoviesCard from './MoviesCard';
 
 function RatingSearch({filterText,filterrate}) {
     return (

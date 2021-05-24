@@ -24,8 +24,8 @@ setnewmovie({...newmovie,[e.target.name]:e.target.value})
                   <Modal.Body style={{ display:'flex' ,flexDirection:'column'}} > 
                       Title:<input name='title' onChange={handleChange}></input>
       
-                      Description:<input name='description'onChange={handleChange}></input>
-                      URL:<input name='url'onChange={handleChange}></input>
+                      Description:<input name='description' onChange={handleChange}></input>
+                      URL:<input name='url' onChange={handleChange}></input>
                       rating:<input name='rate'onChange={handleChange}></input>
                   </Modal.Body>
                   <Modal.Footer>
