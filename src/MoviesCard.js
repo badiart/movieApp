@@ -1,6 +1,8 @@
+import { Button } from 'react-bootstrap';
 import React from 'react'
 import {Card} from 'react-bootstrap'
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 
 function MoviesCard({movie}) {
     return (
@@ -12,6 +14,7 @@ function MoviesCard({movie}) {
     <Card.Text style={{color:'black'}}>
       {movie.description}</Card.Text>
     <Card.Text style={{color:'black'}}>{movie.rate}</Card.Text>
+    {/* <Card.Text style={{color:'black'}}>{movie.trailerlink}</Card.Text> */}
     <ReactStars
     count={5}
 value={movie.rate}
@@ -19,6 +22,7 @@ edit={false}
     size={24}
     activeColor="#ffd700"
   />,
+  <Link to={location => ({ ...location, pathname: "/description" ,aboutProps:{name:movie.trailerlink,title:movie.title}})} ><Button> read more</Button></Link>
     
   </Card.Body>
 </Card>

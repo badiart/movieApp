@@ -10,7 +10,7 @@ function RatingSearch({filterText,filterrate}) {
 <input onChange = {(e)=>filterText(e.target.value)}/>
 <ReactStars
     count={5}
-value={2}
+// value={2}
 // edit={false}
 onChange={(newrating)=>filterrate(newrating)}
     size={24}
